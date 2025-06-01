@@ -43,7 +43,7 @@ pip install -r requirements.txt
 # 実行
 python main.py
 ```
-## 📂 ディレクトリ構成（例）
+## 📂 ディレクトリ構成
 ```bash
 note_scraper/
 ├── get_topic.py

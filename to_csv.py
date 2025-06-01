@@ -1,6 +1,5 @@
 from datetime import datetime
 import os
-import re
 import pandas as pd
 
 
@@ -8,7 +7,6 @@ def save_csv(top_5,section_url):
     today = datetime.today().strftime('%Y.%m.%d')
     df = pd.DataFrame(top_5)
     df.index = df.index + 1
-    safe_section = re.sub(r'[\\/*?:"<>|]', '_', section_url)
     file_path = f'output/note_{section_url}_{today}.csv'
     try:
         df.to_csv(file_path, encoding='utf-8')

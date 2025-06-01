@@ -1,8 +1,5 @@
 import time
-
 from bs4 import BeautifulSoup
-
-
 def add_body(top_5,browser):
     for i,item in enumerate(top_5):
         item_url = item['url']
